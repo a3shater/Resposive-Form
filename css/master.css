@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("font/Roboto-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  overflow: hidden;
+}
+.container {
+  max-width: 1200px;
+  width: 80%;
+  background-color: white;
+  overflow: hidden;
+  -moz-border-radius: 10%;
+  -webkit-border-radius: 10%;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.image {
+  width: 400px;
+
+  background-color: #5dc1eb;
+  overflow: hidden;
+  position: relative;
+}
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.form {
+  flex-grow: 1;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 15px;
+}
+@media (max-width: 533.5px) {
+}
+form {
+  opacity: 0.5;
+}
+form input:not([type="radio"]):not(button),
+form div {
+  padding: 15px;
+  border-radius: 3px;
+  width: 250px;
+  outline: none;
+}
+form div input:last-child {
+  margin-left: 15px;
+}
+form .buttons {
+  width: 100%;
+  text-align: right;
+  padding: 0;
+  margin-top: 50px;
+}
+@media (max-width: 533.5px) {
+  .form {
+    padding: 20px 15px;
+  }
+  form .buttons {
+    text-align: left;
+    margin-top: 30px;
+  }
+}
+form .buttons button {
+  width: 120px;
+  height: 40px;
+  border-radius: 3px;
+  border: none;
+
+  opacity: 1 !important;
+  font-family: inherit !important;
+  font-size: 1em;
+}
+
+form .buttons button:last-child {
+  background-color: #3c7b14;
+  color: white;
+  margin-left: 5px;
+}
+label {
+  display: inline-block;
+  width: 100px;
+  margin: 21px;
+}
